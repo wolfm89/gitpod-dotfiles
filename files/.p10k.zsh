@@ -2,7 +2,7 @@
 # Based on romkatv/powerlevel10k/config/p10k-classic.zsh, checksum 48479.
 # Wizard options: nerdfont-complete + powerline, small icons, classic, unicode, light,
 # 24h time, vertical separators, round heads, round tails, 2 lines, solid, full frame,
-# compact, many icons, concise, transient_prompt, instant_prompt=verbose.
+# compact, many icons, concise, instant_prompt=verbose.
 # Type `p10k configure` to generate another config.
 #
 # Config for Powerlevel10k with classic powerline prompt style. Type `p10k configure` to generate
@@ -1706,7 +1706,7 @@
   #   - always:   Trim down prompt when accepting a command line.
   #   - same-dir: Trim down prompt when accepting a command line unless this is the first command
   #               typed after changing current working directory.
-  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always
+  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=off
 
   # Instant prompt mode.
   #
