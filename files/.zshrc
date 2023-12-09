@@ -23,8 +23,6 @@ antigen use oh-my-zsh
 antigen bundle z
 antigen bundle git
 antigen bundle ubuntu
-antigen bundle docker
-antigen bundle docker-compose
 antigen bundle sudo
 antigen bundle npm
 antigen bundle nvm
