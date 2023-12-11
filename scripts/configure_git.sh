@@ -1,14 +1,15 @@
 #!/bin/bash
 
-wget https://github.com/dandavison/delta/releases/download/0.16.5/git-delta_0.16.5_amd64.deb
+DELTA_VERSION=0.16.5
 
-sudo dpkg -i git-delta_0.16.5_amd64.deb
+wget -nv https://github.com/dandavison/delta/releases/download/"$DELTA_VERSION"/git-delta_"$DELTA_VERSION"_amd64.deb
+
+sudo dpkg -i git-delta_"$DELTA_VERSION"_amd64.deb
 
 git config --global core.pager delta
 git config --global interactive.diffFilter "delta --color-only"
 git config --global delta.navigate true
 git config --global delta.light false
+git config --global delta.side-by-side true
 git config --global merge.conflictstyle diff3
 git config --global diff.colorMoved default
-
-git config --global core.editor "vim"
