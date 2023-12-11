@@ -34,4 +34,9 @@ antigen theme romkatv/powerlevel10k
 # Run all that config
 antigen apply
 
+# Activate Powerlevel10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Hishtory Config
+export PATH="$PATH:$HOME/.hishtory"
+source $HOME/.hishtory/config.zsh
